@@ -1,0 +1,5 @@
+xterm*selectToClipboard: true
+xterm*faceName: Source Code Pro
+xterm*faceSize: 15
+xterm*reverseVideo: true
+
