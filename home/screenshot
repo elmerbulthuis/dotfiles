@@ -1,0 +1,9 @@
+#!/bin/sh
+
+import -window $( \
+        i3-msg -t get_tree | \
+        jq --raw-output 'recurse(.nodes[]) | select(.focused).window' \
+) png:- | \
+xclip -selection clipboard -t image/png
+
+

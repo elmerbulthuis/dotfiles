@@ -1,0 +1,24 @@
+#!/bin/sh
+
+export DEVICES=$(xsetwacom --list devices | grep -Po "id:\s+\K\d+")
+export OUTPUT=$(i3-msg -t get_tree | jq --raw-output 'recurse(.nodes[]) | select(.focused).output')
+
+for DEVICE in $DEVICES
+do
+	xsetwacom set $DEVICE MapToOutput $OUTPUT
+done
+
+i3-msg -t subscribe -m '["workspace"]' |
+while read EVENT
+do
+	echo $EVENT |
+	jq --raw-output 'select(.change="focus").current.output' |
+	while read OUTPUT
+	do
+		for DEVICE in $DEVICES
+		do
+			xsetwacom set $DEVICE MapToOutput $OUTPUT
+		done
+	done
+done
+
