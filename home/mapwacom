@@ -12,7 +12,7 @@ i3-msg -t subscribe -m '["workspace"]' |
 while read EVENT
 do
 	echo $EVENT |
-	jq --raw-output 'select(.change="focus").current.output' |
+	jq --raw-output 'select(.change=="focus").current.output' |
 	while read OUTPUT
 	do
 		for DEVICE in $DEVICES
