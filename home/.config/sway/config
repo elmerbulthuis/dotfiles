@@ -224,7 +224,7 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id \
 bindsym XF86AudioLowerVolume exec --no-startup-id \
 	amixer set Master 5%-
 bindsym XF86AudioMute exec --no-startup-id \
-    amixer set Master toggle
+    amixer set Master 0
 
 bindsym $mod+Prior exec --no-startup-id \
 	amixer set Master 5%+
