@@ -220,19 +220,19 @@ bar {
 # bindsym $mod+l exec --no-startup-id swaylock
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id \
-	pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+	amixer set Master 5%+
 bindsym XF86AudioLowerVolume exec --no-startup-id \
-	pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+	amixer set Master 5%-
 bindsym XF86AudioMute exec --no-startup-id \
-	pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+    amixer set Master toggle
 
 bindsym $mod+Prior exec --no-startup-id \
-	pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
+	amixer set Master 5%+
 bindsym $mod+Next exec --no-startup-id \
-	pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+	amixer set Master 5%-
 
 bindsym XF86MonBrightnessUp exec --no-startup-id \
-    brightnessctl set -e +5%
+    brightnessctl set -e 5%+
 bindsym XF86MonBrightnessDown exec --no-startup-id \
     brightnessctl set -e 5%-
 
