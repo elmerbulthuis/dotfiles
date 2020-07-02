@@ -11,7 +11,8 @@ set $right l
 set $term alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg #3EAFFF solid_color
+
 #
 # Example configuration:
 #
