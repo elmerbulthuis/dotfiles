@@ -11,7 +11,7 @@ set $right l
 set $term alacritty
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
-output * bg #3EAFFF solid_color
+output * bg ~/bg.png fit
 
 #
 # Example configuration:
@@ -237,9 +237,11 @@ bindsym XF86MonBrightnessUp exec --no-startup-id \
 bindsym XF86MonBrightnessDown exec --no-startup-id \
     brightnessctl set -e 5%-
 
-input "1739:30383:DELL08AF:00_06CB:76AF_Touchpad" {
+input type:touchpad {
     natural_scroll enabled
 	click_method clickfinger
 }
 
-
+input type:keyboard {
+    xkb_options ctrl:nocaps
+}
