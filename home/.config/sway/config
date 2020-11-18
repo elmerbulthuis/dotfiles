@@ -223,24 +223,26 @@ bar {
 
 font SourceCodePro Medium 9
 
-# bindsym $mod+l exec --no-startup-id swaylock
+# bindsym $mod+l exec swaylock
 
-bindsym XF86AudioRaiseVolume exec --no-startup-id \
+bindsym XF86AudioRaiseVolume exec \
 	amixer set Master 5%+
-bindsym XF86AudioLowerVolume exec --no-startup-id \
+bindsym XF86AudioLowerVolume exec \
 	amixer set Master 5%-
-bindsym XF86AudioMute exec --no-startup-id \
+bindsym XF86AudioMute exec \
     amixer set Master 0
 
-bindsym $mod+Prior exec --no-startup-id \
+bindsym $mod+Prior exec \
 	amixer set Master 5%+
-bindsym $mod+Next exec --no-startup-id \
+bindsym $mod+Next exec \
 	amixer set Master 5%-
 
-bindsym XF86MonBrightnessUp exec --no-startup-id \
+bindsym XF86MonBrightnessUp exec \
     brightnessctl set -e 5%+
-bindsym XF86MonBrightnessDown exec --no-startup-id \
+bindsym XF86MonBrightnessDown exec \
     brightnessctl set -e 5%-
+
+bindsym Print exec grim - | wl-copy --type image/png
 
 input type:touchpad {
     natural_scroll enabled
