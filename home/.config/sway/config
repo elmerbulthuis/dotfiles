@@ -9,7 +9,7 @@ set $right l
 
 
 set $term alacritty
-set $menu bemenu-run --fn "SourceCodePro Medium 9"
+set $menu bemenu-run --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 21"
 
 gaps inner 6
 gaps outer 0
