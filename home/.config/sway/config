@@ -9,9 +9,9 @@ set $right l
 
 
 set $term alacritty
-set $menu bemenu-run --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 21"
+set $menu bemenu-run --ignorecase --prompt ">" --prefix "" --fn "SourceCodePro Medium 50"
 
-gaps inner 6
+gaps inner 0
 gaps outer 0
 
 # output * bg ~/bg.png fit
