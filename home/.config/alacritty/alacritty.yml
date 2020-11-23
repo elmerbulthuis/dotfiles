@@ -58,7 +58,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  #decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -75,7 +75,7 @@ window:
   #title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  dynamic_title: true
+  # dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -334,7 +334,7 @@ selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  save_to_clipboard: false
+  save_to_clipboard: true
 
 #cursor:
   # Cursor style
