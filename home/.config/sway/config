@@ -9,10 +9,12 @@ set $right l
 
 
 set $term alacritty
-set $menu bemenu-run --ignorecase --prompt ">" --prefix "" --fn "SourceCodePro Medium 50"
+set $menu bemenu-run --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 64" --tf "#2aa3dc" --hf "#2aa3dc"
 
 gaps inner 0
 gaps outer 0
+
+output * bg #2aa3dc solid_color
 
 # output * bg ~/bg.png fit
 
@@ -230,12 +232,19 @@ bindsym XF86AudioRaiseVolume exec \
 bindsym XF86AudioLowerVolume exec \
 	amixer set Master 5%-
 bindsym XF86AudioMute exec \
-    amixer set Master 0
+    amixer set Master toggle
 
 bindsym $mod+Prior exec \
 	amixer set Master 5%+
 bindsym $mod+Next exec \
 	amixer set Master 5%-
+
+bindsym Mod5 exec \
+    amixer set Capture cap
+bindsym --release Mod5 exec \
+    amixer set Capture nocap
+bindsym Shift+Mod5 exec \
+    amixer set Capture toggle
 
 bindsym XF86MonBrightnessUp exec \
     brightnessctl set -e 5%+
@@ -250,5 +259,5 @@ input type:touchpad {
 }
 
 input type:keyboard {
-    xkb_options ctrl:nocaps
+    xkb_options caps:none
 }
