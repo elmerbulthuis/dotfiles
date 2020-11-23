@@ -239,11 +239,11 @@ bindsym $mod+Prior exec \
 bindsym $mod+Next exec \
 	amixer set Master 5%-
 
-bindsym Mod5 exec \
+bindsym Menu exec \
     amixer set Capture cap
-bindsym --release Mod5 exec \
+bindsym --release Menu exec \
     amixer set Capture nocap
-bindsym Shift+Mod5 exec \
+bindsym Shift+Menu exec \
     amixer set Capture toggle
 
 bindsym XF86MonBrightnessUp exec \
@@ -259,5 +259,5 @@ input type:touchpad {
 }
 
 input type:keyboard {
-    xkb_options caps:none
+    xkb_options caps:menu
 }
