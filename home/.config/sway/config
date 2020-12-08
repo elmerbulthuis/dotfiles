@@ -9,7 +9,7 @@ set $right l
 
 
 set $term alacritty
-set $menu bemenu-run --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 64" --tf "#2aa3dc" --hf "#2aa3dc"
+set $menu bemenu-run --monitor all --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 64" --tf "#2aa3dc" --hf "#2aa3dc"
 
 gaps inner 0
 gaps outer 0
