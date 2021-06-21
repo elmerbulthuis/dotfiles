@@ -1,9 +1,9 @@
 #!/bin/sh
 
-export OUTPUT=$(swaymsg -t get_outputs --raw | jq --raw-output '.[] | select(.focused).name')
+export OUTPUT=$(swaymsg --type get_outputs --raw | jq --raw-output '.[] | select(.focused).name')
 swaymsg input type:tablet_tool map_to_output $OUTPUT
 
-swaymsg -t subscribe -m '["workspace"]' |
+swaymsg --type subscribe --monitor '["workspace"]' |
 while read EVENT
 do
 	echo $EVENT |
