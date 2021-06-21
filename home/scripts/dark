@@ -1,0 +1,4 @@
+#!/bin/sh
+
+gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+npx alacritty-themes 3024.dark
