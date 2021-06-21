@@ -15,6 +15,10 @@ gaps inner 0
 gaps outer 0
 
 output * bg #2aa3dc solid_color
+output DP-1 pos 0 0
+output DP-2 pos 3840 0
+output DP-3 pos 7680 0
+
 
 #
 # Example configuration:
