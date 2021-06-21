@@ -255,6 +255,8 @@ bindsym XF86MonBrightnessDown exec \
 
 bindsym Print exec ~/scripts/screenshot
 
+exec_always --no-startup-id ~/scripts/mapwacom 
+
 input type:touchpad {
     natural_scroll enabled
 	click_method clickfinger
