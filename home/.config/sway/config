@@ -16,8 +16,6 @@ gaps outer 0
 
 output * bg #2aa3dc solid_color
 
-# output * bg ~/bg.png fit
-
 #
 # Example configuration:
 #
@@ -251,7 +249,7 @@ bindsym XF86MonBrightnessUp exec \
 bindsym XF86MonBrightnessDown exec \
     brightnessctl set -e 5%-
 
-bindsym Print exec ~/screenshot
+bindsym Print exec ~/scripts/screenshot
 
 input type:touchpad {
     natural_scroll enabled
