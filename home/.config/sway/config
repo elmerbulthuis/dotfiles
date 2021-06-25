@@ -230,23 +230,23 @@ font SourceCodePro Medium 9
 # bindsym $mod+l exec swaylock
 
 bindsym XF86AudioRaiseVolume exec \
-	amixer set Master 5%+
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec \
-	amixer set Master 5%-
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec \
-    amixer set Master toggle
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 bindsym $mod+Prior exec \
-	amixer set Master 5%+
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym $mod+Next exec \
-	amixer set Master 5%-
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
 
 bindsym Menu exec \
-    amixer set Capture cap
+    pactl set-source-mute @DEFAULT_SOURCE@ 0
 bindsym --release Menu exec \
-    amixer set Capture nocap
+    pactl set-source-mute @DEFAULT_SOURCE@ 1
 bindsym Shift+Menu exec \
-    amixer set Capture toggle
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 bindsym XF86MonBrightnessUp exec \
     brightnessctl set -e 5%+
