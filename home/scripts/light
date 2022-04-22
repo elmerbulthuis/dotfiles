@@ -1,4 +1,4 @@
 #!/bin/sh
 
 gsettings set org.gnome.desktop.interface gtk-theme "Adwaita"
-npx alacritty-themes 3024.light
+npx alacritty-themes Default.light
