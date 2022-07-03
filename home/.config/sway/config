@@ -2,7 +2,7 @@ focus_follows_mouse yes
 
 set $mod Mod4
 
-set $term alacritty
+set $term foot
 set $menu bemenu-run --monitor all --ignorecase --prompt "" --prefix "" --fn "SourceCodePro Medium 64" --tf "#2aa3dc" --hf "#2aa3dc"
 
 gaps inner 0
@@ -229,6 +229,8 @@ bindsym Menu exec \
 bindsym --release Menu exec \
     pactl set-source-mute @DEFAULT_SOURCE@ 1
 bindsym Shift+Menu exec \
+    pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioMicMute exec \
     pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 bindsym XF86MonBrightnessUp exec \
