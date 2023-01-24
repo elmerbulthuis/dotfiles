@@ -1,0 +1,13 @@
+#!/bin/sh
+
+pgrep -x polybar > /dev/null || polybar & 
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width        2 
+bspc config window_gap          4
+
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+

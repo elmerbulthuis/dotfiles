@@ -1,5 +1,6 @@
 xterm*selectToClipboard: true
-xterm*faceName: Source Code Pro
-xterm*faceSize: 15
-xterm*reverseVideo: true
+xterm*faceName: monospace
+xterm*faceSize: 14
+
+URxvt*font: xft:monospace:size=14
 

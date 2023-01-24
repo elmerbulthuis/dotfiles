@@ -1,4 +1,7 @@
-xsetroot -solid '#3EAFFF'
+xsetroot -solid '#ffcc44'
+xsetroot -cursor_name left_ptr
 xrdb ~/.Xresources
-exec i3
+xbindkeys
+setxkbmap -option caps:none
+exec bspwm
 
