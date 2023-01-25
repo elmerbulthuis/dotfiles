@@ -3,27 +3,27 @@ font sans-serif
 focus_follows_mouse no
 
 # change focus
-bindsym Mod4+Left focus left
-bindsym Mod4+Down focus down
-bindsym Mod4+Up focus up
-bindsym Mod4+Right focus right
+bindsym Mod4+h focus left
+bindsym Mod4+j focus down
+bindsym Mod4+k focus up
+bindsym Mod4+l focus right
 
-bindsym Mod4+Control+Left focus output left
-bindsym Mod4+Control+Down focus output down
-bindsym Mod4+Control+Up focus output up
-bindsym Mod4+Control+Right focus output right
+bindsym Mod4+Control+h focus output left
+bindsym Mod4+Control+j focus output down
+bindsym Mod4+Control+k focus output up
+bindsym Mod4+Control+l focus output right
 
 # move focused window
-bindsym Mod4+Shift+Left move left
-bindsym Mod4+Shift+Down move down
-bindsym Mod4+Shift+Up move up
-bindsym Mod4+Shift+Right move right
+bindsym Mod4+Shift+h move left
+bindsym Mod4+Shift+j move down
+bindsym Mod4+Shift+k move up
+bindsym Mod4+Shift+l move right
 
 # move workspace
-bindsym Mod4+Control+Shift+Left move workspace to output left
-bindsym Mod4+Control+Shift+Down move workspace to output down
-bindsym Mod4+Control+Shift+Up move workspace to output up
-bindsym Mod4+Control+Shift+Right move workspace to output right
+bindsym Mod4+Control+Shift+h move workspace to output left
+bindsym Mod4+Control+Shift+j move workspace to output down
+bindsym Mod4+Control+Shift+k move workspace to output up
+bindsym Mod4+Control+Shift+l move workspace to output right
 
 # keys
 # bindsym Mod4+s layout stacking
