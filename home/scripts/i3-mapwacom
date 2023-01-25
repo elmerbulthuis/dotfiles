@@ -1,0 +1,17 @@
+#!/bin/sh
+
+update() {
+	OUTPUT=$(i3-msg --type get_workspaces | jq -r '.[] | select(.focused).output')
+
+	for DEVICE in $(xsetwacom --list devices | sed --regexp-extended "s/^.*id:\s+([0-9]+).*$/\1/g")
+	do
+		xsetwacom --set $DEVICE MapToOutput $OUTPUT
+	done
+}
+
+update
+
+for EVENT in $(i3-msg --type subscribe --monitor '["workspace"]')
+do
+	update
+done

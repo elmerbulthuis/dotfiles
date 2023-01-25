@@ -240,7 +240,7 @@ bindsym XF86MonBrightnessDown exec \
 
 bindsym Print exec ~/scripts/screenshot
 
-exec_always --no-startup-id ~/scripts/mapwacom 
+exec_always --no-startup-id ~/scripts/sway-mapwacom 
 
 input type:touchpad {
     natural_scroll enabled

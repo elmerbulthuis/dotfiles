@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for MONITOR in $(polybar --list-monitors | sed --regexp-extended "s/^(.*):.*$/\1/g")
+do
+    MONITOR=$MONITOR polybar &
+done
+
+wait
