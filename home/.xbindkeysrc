@@ -1,0 +1,43 @@
+# Increase volume
+"pactl set-sink-volume @DEFAULT_SINK@ +1000"
+	XF86AudioRaiseVolume
+
+# Decrease volume
+"pactl set-sink-volume @DEFAULT_SINK@ -1000"
+	XF86AudioLowerVolume
+
+# Mute volume
+"pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	XF86AudioMute
+
+# Mute microphone
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+	XF86AudioMicMute
+
+# PTT
+"pactl set-source-mute @DEFAULT_SOURCE@ 0"
+	m:0x0 + c:66
+"pactl set-source-mute @DEFAULT_SOURCE@ 1"
+	m:0x0 + c:66 + Release
+
+# Brightness up
+"brightnessctl set -e 5%+"
+	XF86MonBrightnessUp
+
+# Brightness down
+"brightnessctl set -e 5%-"
+	XF86MonBrightnessDown
+
+# terminal emulator
+"uxterm"
+	Mod4 + Return
+
+# program launcher
+"rofi -show drun"
+	Mod4 + space
+
+# Printscreen
+"import -window `xdotool getwindowfocus` png:- | xclip  -selection clipboard -target image/png"
+	Print
+
+
