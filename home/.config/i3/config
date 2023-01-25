@@ -1,5 +1,7 @@
 font sans-serif
 
+focus_follows_mouse no
+
 # change focus
 bindsym Mod4+Left focus left
 bindsym Mod4+Down focus down

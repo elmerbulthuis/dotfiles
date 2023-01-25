@@ -11,7 +11,8 @@ update() {
 
 update
 
-for EVENT in $(i3-msg --type subscribe --monitor '["workspace"]')
+i3-msg --type subscribe --monitor '["workspace"]' |
+while read EVENT
 do
 	update
 done
