@@ -28,12 +28,12 @@ bindsym Mod4+Control+Shift+Right move workspace to output right
 # keys
 # bindsym Mod4+s layout stacking
 # bindsym Mod4+w layout tabbed
-bindsym Mod4+e layout toggle split
-bindsym Mod4+h split h
-bindsym Mod4+v split v 
+# bindsym Mod4+e layout toggle split
+# bindsym Mod4+h split h
+# bindsym Mod4+v split v 
 # bindsym Mod4+f fullscreen toggle
-bindsym Mod4+a focus parent
-bindsym Mod4+s focus child
+# bindsym Mod4+a focus parent
+# bindsym Mod4+s focus child
 
 # switch to workspace
 bindsym Mod4+1 workspace I
