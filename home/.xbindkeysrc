@@ -29,7 +29,7 @@
 	XF86MonBrightnessDown
 
 # terminal emulator
-"uxterm"
+"alacritty"
 	Mod4 + Return
 
 # program launcher

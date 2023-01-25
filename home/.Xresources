@@ -1,6 +1,0 @@
-xterm*selectToClipboard: true
-xterm*faceName: monospace
-xterm*faceSize: 14
-
-URxvt*font: xft:monospace:size=14
-
