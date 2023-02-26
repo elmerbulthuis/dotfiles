@@ -8,4 +8,4 @@ jq '.["workbench.colorTheme"] = "Default Light+"' '.config/Code - OSS/User/setti
 mv '.config/Code - OSS/User/settings.json~' '.config/Code - OSS/User/settings.json'
 
 #alacritty
-npx -y alacritty-themes 3024.light
+npx -y alacritty-themes Default.light

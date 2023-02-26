@@ -8,4 +8,4 @@ jq '.["workbench.colorTheme"] = "Default Dark+"' '.config/Code - OSS/User/settin
 mv '.config/Code - OSS/User/settings.json~' '.config/Code - OSS/User/settings.json'
 
 #alacritty
-npx -y alacritty-themes 3024.dark
+npx -y alacritty-themes Default.dark
