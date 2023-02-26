@@ -1,4 +1,11 @@
 #!/bin/sh
 
-gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+#gtk
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
+#vscode
+jq '.["workbench.colorTheme"] = "Default Dark+"' '.config/Code - OSS/User/settings.json' > '.config/Code - OSS/User/settings.json~'
+mv '.config/Code - OSS/User/settings.json~' '.config/Code - OSS/User/settings.json'
+
+#alacritty
+npx -y alacritty-themes 3024.dark
