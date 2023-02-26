@@ -1,11 +1,12 @@
 #!/bin/sh
 
-# gtk
-gsettings set org.gnome.desktop.interface color-scheme 'default'
+# gnome
+gsettings set org.gnome.desktop.interface color-scheme default
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita
 
 # vscode
 jq '.["workbench.colorTheme"] = "Default Light+"' '.config/Code - OSS/User/settings.json' > '.config/Code - OSS/User/settings.json~'
 mv '.config/Code - OSS/User/settings.json~' '.config/Code - OSS/User/settings.json'
 
-#alacritty
+# alacritty
 npx -y alacritty-themes Default.light
