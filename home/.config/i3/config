@@ -61,6 +61,10 @@ bindsym Mod4+Shift+0 move container to workspace 10
 
 bindsym Mod4+w kill
 
+# bindsym Mod4+a layout stacking
+bindsym Mod4+s layout tabbed
+bindsym Mod4+d layout toggle split
+
 exec_always --no-startup-id ~/scripts/i3-mapwacom
 
 bar {
