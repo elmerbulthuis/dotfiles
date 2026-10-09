@@ -15,4 +15,4 @@ zstyle ':vcs_info:git:*' actionformats '%b|%a'
 dim=$'%{\e[2m%}'
 reset=$'%{\e[0m%}'
 
-PROMPT='%(?..%? )%1~${vcs_info_msg_0_:+ ${dim}${vcs_info_msg_0_}${reset}} %B\$%b '
+PROMPT='%(?..%? )%1~${vcs_info_msg_0_:+ ${dim}${vcs_info_msg_0_}${reset}} %B%(!.#.$)%b '
